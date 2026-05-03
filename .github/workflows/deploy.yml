@@ -32,9 +32,12 @@ jobs:
       - name: Debug — node & npm versions
         run: node --version && npm --version
 
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         working-directory: frontend
-        run: npm ci
+        run: npm install
 
       - name: Generate static site
         working-directory: frontend
