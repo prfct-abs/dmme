@@ -43,7 +43,11 @@ jobs:
           NUXT_PUBLIC_API_URL: ${{ secrets.NUXT_PUBLIC_API_URL }}
           NUXT_PUBLIC_WS_URL:  ${{ secrets.NUXT_PUBLIC_WS_URL }}
           NUXT_APP_BASE_URL:   ${{ vars.NUXT_APP_BASE_URL || '/dmMe/' }}
+          NUXT_TELEMETRY_DISABLED: '1'
         run: npm run generate
+
+      - name: List build output (debug)
+        run: ls -la .output/public/ || echo "ERROR — .output/public not found"
 
       - name: Copy 404.html for SPA routing
         run: cp .output/public/index.html .output/public/404.html
