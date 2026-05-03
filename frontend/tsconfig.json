@@ -1,0 +1,6 @@
+{
+  // Nuxt generates .nuxt/tsconfig.json after `npx nuxt prepare`.
+  // This file tells VS Code to use it as the base config,
+  // which provides all auto-import types (navigateTo, defineNuxtConfig, useAuthStore, etc.)
+  "extends": "./.nuxt/tsconfig.json"
+}

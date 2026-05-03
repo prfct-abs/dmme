@@ -1,0 +1,28 @@
+# FastAPI + Uvicorn
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+
+# Database
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Data validation
+pydantic[email]==2.10.0
+pydantic-settings==2.6.0
+email-validator==2.2.0
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+authlib==1.3.2
+
+# HTTP client (for platform API calls)
+httpx==0.27.2
+
+# Celery + Redis
+celery==5.4.0
+redis==5.2.0
+
+# Environment
+python-dotenv==1.0.0
